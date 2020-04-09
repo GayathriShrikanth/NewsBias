@@ -4,8 +4,8 @@ app = Flask(__name__)
 import numpy as np
 import pandas as pd
 import pickle
-
-
+import nltk
+nltk.download('punkt')
 
 model = pickle.load(open('model_clickbait_final2.sav', 'rb'))
 #model_bias= load_model('Deployment-flask-master/model_bias_final2.h5')
